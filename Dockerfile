@@ -1,9 +1,9 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.3.2
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.5.2
 
-MAINTAINER Ivan Takarlikov <vtakarlikov@gmail.com>
+MAINTAINER Fyodor Paligin <f.paligin@gmail.com>
 
 ENV discovery.type="single-node"
 
-ENV http.port=9250
+ENV http.port=9200
 
-EXPOSE 9250/tcp
+EXPOSE 9200/tcp
